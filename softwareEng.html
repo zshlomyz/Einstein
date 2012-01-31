@@ -1,14 +1,65 @@
+<!doctype html>
 
-<html dir="rtl">
+<html>
 
 <head>
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
 <title>מחלקת הנדסת תוכנה</title>
+ <style>
+                .removed
+                {
+                        display:none;
+                }
+
+                .expands
+                {
+                        cursor:pointer; cursor:hand;
+                        
+                }
+                
+                
+        </style>
+        <script>
+                function toggle()
+                {
+                        for(var i=0; i<arguments.length; i++)
+                        {
+                                with(document.getElementById(arguments[i]))
+                                {
+                                        if(className.indexOf('removed') > -1)
+                                        {
+                                                className = className.replace('removed');
+                                        }
+                                        else
+                                        {
+                                                className += ' removed';
+                                        }
+                                }
+                        }
+                }
+                
+                 function closeToggle()
+                {
+                        for(var i=0; i<arguments.length; i++)
+                        {
+                                with(document.getElementById(arguments[i]))
+                                {
+                                        if(className.indexOf('removed') == -1)
+                                        {
+                                             className += ' removed';
+                                        }
+                            
+                                }
+                        }
+                }
+
+        </script>
 </head>
 
 <body>
 <META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<p align="center"><i>
 <script language="JavaScript">
 function noRightClick() {
 if (event.button==2) {
@@ -17,71 +68,446 @@ alert(' כל הזכויות שמורות ©')
 }
 document.onmousedown=noRightClick
 </script>
-<blockquote>
+	<img border="0" src="https://github.com/downloads/zshlomyz/Einstein/college.jpg" width="769" height="157"></i><blockquote>
 	<blockquote>
 		<blockquote>
 			<p align="center">
-			<a href="https://github.com/downloads/zshlomyz/Einstein/college.jpg">
-			<img src="https://github.com/downloads/zshlomyz/Einstein/college.jpg" border="0" width="769" height="157"></a></p>
-			<p align="center">
-			<img border="0" src="https://github.com/downloads/zshlomyz/Einstein/Software%20Dept.jpg" width="732" height="124"></p>
+			<i>
+			<img border="0" src="https://github.com/downloads/zshlomyz/Einstein/Software%20Dept.jpg" width="732" height="124"></i></p>
 		</blockquote>
 	</blockquote>
 </blockquote>
-<div align="center">
-	<table border="1" width="18%">
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/linearit.htm">אלגברה ליניארית 
-			1</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor="#9999FF"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/linearit2.htm">אלגברה ליניארית 2</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/mathBdida1.htm">מתמטיקה בדידה 1</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor="#9999FF"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/mathBdida2.htm">מתמטיקה בדידה 2</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/mitug.htm">מיתוג ומערכות 
-			ספרתיות</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor="#9999FF"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/introHedva.htm">מבוא לחדו&quot;א והנדסה אנליטית</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/Linearit.htm">חדו&quot;א 
-			1</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor="#9999FF"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/mivneNetunim.htm">מבנה נתונים</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/progIntro.html">מבוא לתכנות</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor="#9999FF"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/tichnutMuncheAzamim.htm">תכנות מונחה עצמים</a></font></span></td>
-		</tr>
-		<tr>
-			<td align="center"><span lang="he"><font size="5">
-			<a href="http://www.jcetests.145mb.com/mivneVeirgunHamechshev.htm">מבנה וארגון המחשב</a></font></span></td>
-		</tr>
-	</table>
-</div>
-<p>&nbsp;</p>
+
+
+
+
+    <div align="center">
+    <table width="603">
+        <thead>
+        </thead>
+        <tbody>
+                <tr id="first">
+                        <td class="expands"  onclick="closeToggle('first1','first2','first3','first4','first5','first6','first7','first8','first9','first10','first11') ; toggle('semFirstA','semFirstB')" dir="rtl" style="background-color: #9999FF">
+						<p dir="rtl" align="right">
+						<span lang="he"><font size="5"><b><i>שנה א'</i></b></font></span><i> </i> </td>
+                </tr>
+                <tr id="semFirstA" class="removed">
+                
+                        <td class="expands" onclick="toggle('first1','first2','first3','first4','first5')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<span lang="he">סמסטר א'</span></font></i></td>
+                </tr>
+               <tr id="first1" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><font size="4"><i><span lang="he">
+							<a href="http://www.jcetests.99k.org/linearit.html">
+							אלגברה ליניארית 1</span></a></i></font></td>
+                </tr>
+                <tr id="first2" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/mathBdida1.html">
+							מתמטיקה בדידה 1</a></span></font></i></td>
+                </tr>
+                <tr id="first3" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/mitug.html">
+							מיתוג ומערכות ספרתיות</a></span></font></i></td>
+                </tr> 
+                <tr id="first4" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/introHedva.html">
+							מבוא לחדו&quot;א והנדסה אנליטית</a></span></font></i></td>
+                </tr>
+                <tr id="first5" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><span lang="he"><font size="4"><i>
+							<a href="http://www.jcetests.99k.org/progIntro.html">
+							מבוא לתכנות</a></i></font></span></td>
+                </tr> 
+                
+                
+               <tr id="semFirstB" class="removed">
+                       
+                        <td class="expands" onclick="toggle('first6','first7','first8','first9','first10','first11')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span lang="he">סמסטר ב'</span></font></i></td>
+				
+				</tr><tr id="first11" class="removed">       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><font size="4"><i><span lang="he">
+							<a href="http://www.jcetests.99k.org/linearit2.html">אלגברה ליניארית 
+							2</a></span></i></font></td>
+                </tr>
+                <tr id="first6" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/mathBdida2.html">מתמטיקה בדידה 
+							2</a></span></font></i></td>
+                </tr>
+                <tr id="first7" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/hedva1.html">
+							חדו&quot;א 1</a></span></font></i></td>
+                </tr> 
+                <tr id="first8" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/fizika1.html">
+							פיסיקה 1 - מכניקה</a></span></font></i></td>
+                </tr>
+                <tr id="first9" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/mivneNetunim.html">
+							מבנה נתונים</a></span></font></i></td>
+                </tr> 
+                <tr id="first10" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">תכנות 
+							מתקדם</a></span></font></i></td>
+                </tr> 
+                
+
+
+
+
+		
+		        <tr id="second">
+                        <td class="expands"  onclick="closeToggle('second1','second2','second3','second4','second5','second6','second7','second8','second9','second10','second11','second12') ; toggle('semSecondA','semSecondB')" dir="rtl" style="background-color: #9999FF">
+						<p dir="rtl" align="right">
+						<font size="5">
+						<span lang="he"><b><i>שנה ב'</i></b></span></font><i> </i> </td>
+                </tr>
+                <tr id="semSecondA" class="removed">
+                
+                        <td class="expands" onclick="toggle('second1','second2','second3','second4','second5','second6')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<span lang="he">סמסטר א'</span></font></i></td>
+                </tr>
+               <tr id="second1" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							אלגוריתמיקה 1</a></span></font></i></td>
+                </tr>
+                <tr id="second2" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><span lang="he"><font size="4"><i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							חדו&quot;א 2</a></i></font></span></td>
+                </tr>
+                <tr id="second3" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;</font></i><font size="4"><i>
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							לוגיקה מתמטית</a></span></i></font></td>
+                </tr> 
+                <tr id="second4" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;</font></i><span lang="he"><font size="4"><i><a href="http://www.jcetests.99k.org/404.html">פיסיקה 
+							2 - חשמל ומגנטיות</a></i></font></span></td>
+                </tr>
+                <tr id="second5" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><span lang="he"><font size="4"><i>
+							<a href="http://www.jcetests.99k.org/404.html">מבוא 
+							לכלכלה</a></i></font></span></td>
+                </tr>
+                <tr id="second6" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/progIntro.html">
+							<span lang="he"><font size="4"><i>תכנות מונחה עצמים</i></font></span></a></td>
+                </tr> 
+                
+                
+               <tr id="semSecondB" class="removed">
+                       
+                        <td class="expands" onclick="toggle('second7','second8','second9','second10','second11','second12')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span lang="he">סמסטר ב'</span></font></i></td>
+				
+				</tr>
+				<tr id="second7" class="removed">       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><font size="4"><i><span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							אלגוריתמיקה 2</a></span></i></font></td>
+                </tr>
+                <tr id="second8" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							מבנה וארגון המחשב</a></span></font></i></td>
+                </tr>
+                <tr id="second9" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><span lang="he"><font size="4"><i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							הסתברות וסטטיסטיקה 2</a></i></font></span></td>
+                </tr> 
+                <tr id="second10" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;</font></i><font size="4"><i>
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							מסדי נתונים</a></span></i></font></td>
+                </tr>
+                <tr id="second11" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">
+							<a href="http://www.jcetests.99k.org/404.html">
+							מערכות הפעלה</a></span></font></i></td>
+                </tr> 
+                <tr id="second12" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i><span lang="he"><font size="4"><i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							מתמטיקה להנדסה</a></i></font></span></td>
+                </tr> 
+                
+
+
+
+
+
+				<tr id="third">
+                        <td class="expands"  onclick="closeToggle('third1','third2','third3','third4','third5','third6','third7','third8','third9','third10','third11','third12','third13') ; toggle('semThirdA','semThirdB')" dir="rtl" style="background-color: #9999FF">
+						<p dir="rtl" align="right">
+						<font size="5">
+						<span lang="he"><b><i>שנה</span> <span lang="he">ג'</span></i></b></font><i> </i> </td>
+                </tr>
+                <tr id="semThirdA" class="removed">
+                
+                        <td class="expands" onclick="toggle('third1','third2','third3','third4','third5','third6','third13')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<span lang="he">סמסטר א'</span></font></i></td>
+                </tr>
+               <tr id="third1" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>אותות ומערכות</i></font></span></a></td>
+                </tr>
+                <tr id="third2" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>מבוא לתכנות מדעי</i></font></span></a></td>
+                </tr>
+                <tr id="third3" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;</font></i><font size="4"><i>
+							</i></font>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>הנדסת תוכנה</i></font></span></a></td>
+                </tr> 
+                <tr id="third4" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.jcetests.99k.org/404.html"><span lang="he">הסתברות 
+							וסטטיסטיקה 2</span></a></font></i></td>
+                </tr>
+                <tr id="third5" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">תקשורת מחשבים</span></a></font></i></td>
+                </tr>
+                <tr id="third6" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/progIntro.html">
+							<span lang="he">יישומי תקשורת מחשבים</span></a></font></i></td>
+                </tr>
+                <tr id="third13" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/progIntro.html">
+							<span lang="he">אוטומטים ושפות פורמליות</span></a></font></i></td>
+                </tr> 
+                
+                
+               <tr id="semThirdB" class="removed">
+                       
+                        <td class="expands" onclick="toggle('third7','third8','third9','third10','third11','third12')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span lang="he">סמסטר ב'</span></font></i></td>
+				
+				</tr>
+				<tr id="third7" class="removed">       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">מיקרופרוססורים</span></a></font></i></td>
+                </tr>
+                <tr id="third8" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>מעבדה במחשבים - 
+							מחומרה לתכנות</i></font></span></a></td>
+                </tr>
+                <tr id="third9" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">מערכות מבוזרות</span></a></font></i></td>
+                </tr> 
+                <tr id="third10" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;</font></i><font size="4"><i>
+							</i></font>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>עיבוד ספרתי של 
+							אותות</i></font></span></a></td>
+                </tr>
+                <tr id="third11" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">תיכון מונחה עצמים</span></a></font></i></td>
+                </tr> 
+                <tr id="third12" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">חישוביות וסיבוכיות</span></a></font></i></td>
+                </tr> 
+
+
+
+
+				<tr id="four">
+                        <td class="expands"  onclick="closeToggle('four1','four2','four3') ; toggle('semFourA','semFourB')" dir="rtl" style="background-color: #9999FF">
+						<p dir="rtl" align="right">
+						<font size="5">
+						<span lang="he"><b><i>שנה</span> <span lang="he">ד'</span></i></b></font><i> </i> </td>
+                </tr>
+                <tr id="semFourA" class="removed">
+                
+                        <td class="expands" onclick="toggle('four1')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<span lang="he">סמסטר א'</span></font></i></td>
+                </tr>
+               <tr id="four1" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>מערכות זמן אמת</i></font></span></a></td>
+                </tr>
+                
+                
+                
+               <tr id="semFourB" class="removed">
+                       
+                        <td class="expands" onclick="toggle('four2','four3')" dir="rtl" bgcolor="#CCCCCC" align="right">
+						<i>
+						<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span lang="he">סמסטר ב'</span></font></i></td>
+				
+				</tr>
+				<tr id="four2" class="removed">       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							</font></i>
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he"><font size="4"><i>ניתוח ותכנון 
+							מערכות מידע</i></font></span></a></td>
+                </tr>
+                <tr id="four3" class="removed">
+                       
+                         <td dir="rtl" align="right"><p dir="rtl"><i><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span lang="he">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://www.jcetests.99k.org/404.html">
+							<span lang="he">ניהול מיזמים</span></a></font></i></td>
+                </tr>
+
+
+
+
+
+
+
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <p dir="rtl">&nbsp;</div>
 <hr>
-<p align="center"><span lang="he">אודות&nbsp;&nbsp;&nbsp; צור קשר</span></p>
+<p align="center"><i><span lang="he">
+<a href="http://www.jcetests.99k.org/404.html">אודות</a>&nbsp;&nbsp;&nbsp; 
+<a href="http://www.jcetests.99k.org/404.html">צור קשר</a></span></i></p>
 
 </body>
 
